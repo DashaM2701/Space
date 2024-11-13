@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bellefair&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/starter-code/style.css">
+    <link rel="stylesheet" href="/starter-code/reset.css">
+  
+  <title>Space tourism website</title>
+</head>
+<body>
+  <div class="wrapper wrapper-destination">
+    <header class="header">
+      <div class="header_wrapper">
+        <div class="header_logo">
+          <a href="/starter-code/index.html" class="header_logo-link">
+            <img src="/starter-code/assets/shared/logo.svg" alt="" class="header_logo_img">
+          </a>
+          
+        </div>
+        <nav class="header_nav">
+          <button type="button" class="menu-icon ">
+            <div class="menu-icon__line"></div>
+          </button>
+          <div class="overlay"></div>
+          <ul class="header_nav_list">
+            <li class="header_nav_list-item"><a href="/starter-code/index.html" class="header_nav_list_item-link"><span>00</span>HOME</a></li>
+            <li class="header_nav_list-item header_nav_list_item--active"><a href="#!" class="header_nav_list_item-link "><span>01</span>DESTINATION</a></li>
+            <li class="header_nav_list-item"><a href="/starter-code/crew-commander.html" class="header_nav_list_item-link"><span>02</span>CREW</a></li>
+            <li class="header_nav_list-item"><a href="/starter-code/technology-vehicle.html" class="header_nav_list_item-link"><span>03</span>TECHNOLOGY</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="destination_wrapper ">
+      <div class="container">
+        <div class="destination">
+        
+
+          <h2 class="destination-title">
+            <span>01</span>PICK YOUR DESTINATION
+          </h2>
+          <div class="wrapper_tabs-content">
+            <div class="destination_tabs">
+            <button data-tab="tab1" class="destination_tab destination_tab--active">MOON</button>
+            <button data-tab="tab2" class="destination_tab">MARS</button>
+            <button data-tab="tab3" class="destination_tab">EUROPA</button>
+            <button data-tab="tab4" class="destination_tab">TITAN</button>
+  
+  
+          </div>
+          <div id="tab1" class="destination_content">
+           <img src="/starter-code/assets/destination/image-moon.png" alt="" class="destination_content-img">
+           <div class="destination_content-text">
+            <h3 class="destination_content-text-title">MOON</h3>
+            <p class="destination_content-text-desc">
+              See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+            <div class="destination_content-text-line"></div>
+  
+            <div class="destination_content-text-characteristics">
+              <div class="destination_content-text-characteristics-wrapp">
+                <p class="destination_content-text-characteristics-name">AVG. DISTANCE</p>
+                <span class="destination_content-text-characteristics-km">384,400 km</span>
+              </div>
+              <div class="destination_content-text-characteristics-wrapp">
+                <p class="destination_content-text-characteristics-name">Est. travel time</p>
+                <span class="destination_content-text-characteristics-km">3 days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div id="tab2" class="destination_content hide">
+            <img src="/starter-code/assets/destination/image-mars.png" alt="" class="destination_content-img">
+            <div class="destination_content-text">
+             <h3 class="destination_content-text-title">MARS</h3>
+             <p class="destination_content-text-desc">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+             </p>
+             <div class="destination_content-text-line"></div>
+   
+             <div class="destination_content-text-characteristics">
+               <div class="destination_content-text-characteristics-wrapp">
+                 <p class="destination_content-text-characteristics-name">AVG. DISTANCE</p>
+                 <span class="destination_content-text-characteristics-km">225 MIL. km</span>
+               </div>
+               <div class="destination_content-text-characteristics-wrapp">
+                 <p class="destination_content-text-characteristics-name">Est. travel time</p>
+                 <span class="destination_content-text-characteristics-km">9 months</span>
+               </div>
+             </div>
+           </div>
+          </div>
+           <div id="tab3" class="destination_content hide">
+            <img src="/starter-code/assets/destination/image-europa.png" alt="" class="destination_content-img">
+            <div class="destination_content-text">
+             <h3 class="destination_content-text-title">EUROPA</h3>
+             <p class="destination_content-text-desc">
+              The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+             </p>
+             <div class="destination_content-text-line"></div>
+   
+             <div class="destination_content-text-characteristics">
+               <div class="destination_content-text-characteristics-wrapp">
+                 <p class="destination_content-text-characteristics-name">AVG. DISTANCE</p>
+                 <span class="destination_content-text-characteristics-km">628 MIL. km</span>
+               </div>
+               <div class="destination_content-text-characteristics-wrapp">
+                 <p class="destination_content-text-characteristics-name">Est. travel time</p>
+                 <span class="destination_content-text-characteristics-km">3 years</span>
+               </div>
+             </div>
+           </div>
+          
+       
+        </div>
+         <div id="tab4" class="destination_content hide">
+            <img src="/starter-code/assets/destination/image-titan.png" alt="" class="destination_content-img">
+            <div class="destination_content-text">
+             <h3 class="destination_content-text-title">TITAN</h3>
+             <p class="destination_content-text-desc">
+              The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+             </p>
+             <div class="destination_content-text-line"></div>
+   
+             <div class="destination_content-text-characteristics">
+               <div class="destination_content-text-characteristics-wrapp">
+                 <p class="destination_content-text-characteristics-name">AVG. DISTANCE</p>
+                 <span class="destination_content-text-characteristics-km">1.6 BIL. km</span>
+               </div>
+               <div class="destination_content-text-characteristics-wrapp">
+                 <p class="destination_content-text-characteristics-name">Est. travel time</p>
+                 <span class="destination_content-text-characteristics-km">7 years</span>
+               </div>
+             </div>
+           </div>
+          
+           
+        </div>
+      
+      
+      
+    </section>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
